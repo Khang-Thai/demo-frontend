@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="https://s120-ava-talk.zadn.vn/9/6/a/1/7/120/10e9c7317ea4b202b3ddbde76882dade.jpg" sizes="16x16">
+    <title>Five Members</title>
+    <script src="https://kit.fontawesome.com/bce4fde2fa.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="header">
+           
+                <div class="logo">
+                    <a href="index.html"><img src="img/logo.png" alt="" href="index.html"></a>
+                </div>
+                <div class="nav">
+                    <ul class="nav-list">
+                      <li><a href="index.html">TRANG CHỦ</a></li>
+                      <li><a href="produc.html">SẢN PHẨM</a>
+                        <ul class="sub-nav">
+                            <li><a href="">Sofa</a></li>
+                            <li><a href="">Giường</a></li>
+                            <li><a href="tu.html">Tủ</a></li>
+                            <li><a href="ban.html">Bàn</a></li>
+                            <li><a href="">Ghế</a></li>
+                        </ul>
+                </li>
+                      <li><a href="">BỘ SƯU TẬP</a></li>
+                      <li><a href="">LIÊN HỆ</a></li>
+                    </ul>
+                </div>
+                <div class="search">
+                    <i class="fa-solid fa-magnifying-glass icon-search"></i>
+                    <input type="search" name="" id="">
+                    <p>BAG(0)</p>
+                </div>
+            </div>
+            <div class="clear"></div>
+        <!-- Slideshow container -->
+    
+            <div class="slideshow-container">
+            
+                <!-- Full-width images with number and caption text -->
+                <div class="mySlides fade">
+                  <img src="img/mau-noi-that-phong-khach-dep-sang-03.jpg" style="width:100%">>
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="img/noi-that-phong-khach-dep.jpg" style="width:100%">
+                </div>
+              
+                <div class="mySlides fade">
+                  <img src="img/top-10-thiet-ke-noi-that-1.jpg" style="width:100%">
+                </div>
+              
+            
+              </div>
+            
+              <br>
+              
+              <!-- The dots/circles -->
+              <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+            
+    </div>
+
+    <script>
+let slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+</body>
+</html>
